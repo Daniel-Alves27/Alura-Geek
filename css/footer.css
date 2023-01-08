@@ -1,8 +1,9 @@
+.container {
+    background-color: var(--azul-formulario);
+}
+
 .informacoes__footer {
     text-align: center;
-    position: relative;
-    top: 2em;
-    background-color: var(--azul-formulario);
 }
 
 .footer__paragrafo {
@@ -17,20 +18,17 @@
 }
 
 .formulario__footer {
-    position: relative;
-    top: 2em;
     display: flex;
     flex-direction: column;
-    background-color: var(--azul-formulario);
-    
+    width: 350px;
+    margin: 0 auto;
 }
 
 .formulario__footer h2 {
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 700;
-    padding-left: 30px;
-    padding-bottom: 10px;
+    padding: 0 0 10px 10px;
 }
 
 #nome {
@@ -75,20 +73,87 @@
     font-family: var(--fonte-principal);
     font-weight: 600;
     color: var(--branco);
-    margin-left: 32px;
-    margin-bottom: 15px;
+    margin: 0 0 10px 10px;
 }
 
-.rodapé {
-    position: relative;
+.rodape {
     text-align: center;
     font-family: var(--fonte-principal);
     font-weight: 500;
     font-size: 16px;
-    top: 3em;
     padding: 2em 0;
+    background-color: var(--branco);
 }
 
-.rodapé p {
+.rodape p {
     padding-bottom: 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .informacoes__footer {
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    #logo__footer {
+        padding: 1em 0;
+    }
+
+    .formulario__footer{
+        width: 60%;
+        padding-top: 1em;
+    }
+
+    .formulario__footer h2 {
+        padding:0;
+        margin-bottom: 1em;
+    }
+
+    #nome {
+        width: 100%;
+        margin: 0;
+    }
+
+    #escrevaSuaMensagem {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    #enviarMensagem {
+        margin: 0;
+    }
+
+    .rodape{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .informacoes__footer {
+        width: 60%;
+        margin: 0;
+        padding-top: 1em;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50px 50px 50px 50px;
+    }
+
+    #logo__footer {
+        grid-row-start: 1;
+        grid-row-end: 7;
+        width: 50%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .formulario__footer{
+        width: 30%;
+        padding-top: 1em;
+        margin: 0 auto 0 0;
+    }
 }

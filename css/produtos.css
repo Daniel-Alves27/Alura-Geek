@@ -1,6 +1,4 @@
 .produtos {
-    position: relative;
-    top: 3em;
     padding-bottom: 2em;
 }
 
@@ -8,7 +6,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 2em;
+    padding: 1em 0;
+    width: 320px;
+    margin: 0 auto;
 }
 
 .produtos__titulo h2 {
@@ -29,6 +29,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .produtos__item {
