@@ -1,0 +1,94 @@
+.informacoes__footer {
+    text-align: center;
+    position: relative;
+    top: 2em;
+    background-color: var(--azul-formulario);
+}
+
+.footer__paragrafo {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--fonte-principal);
+    padding-bottom: 1.5em;
+}
+
+#logo__footer {
+    padding: 2em;
+}
+
+.formulario__footer {
+    position: relative;
+    top: 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azul-formulario);
+    
+}
+
+.formulario__footer h2 {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+#nome {
+    width: 330px;
+    height: 56px;
+    box-shadow: 0 2px rgba(200,200,200);
+    margin: 0 auto;
+}
+
+#nome::placeholder {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    font-family: var(--fonte-principal);
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--cor-placeholder);
+}
+
+#escrevaSuaMensagem {
+    box-shadow: 0 2px rgba(200,200,200);
+    width: 330px;
+    height: 80px;
+    margin: 16px auto;
+}
+
+#escrevaSuaMensagem::placeholder {
+    position: absolute;
+    top: 1em;
+    left: 0.5em;
+    font-family: var(--fonte-principal);
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--cor-placeholder)
+}
+
+#enviarMensagem {
+    width: 150px;
+    height: 40px;
+    background-color: var(--azul-fonte);
+    font-size: 14px;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    color: var(--branco);
+    margin-left: 32px;
+    margin-bottom: 15px;
+}
+
+.rodapé {
+    position: relative;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 16px;
+    top: 3em;
+    padding: 2em 0;
+}
+
+.rodapé p {
+    padding-bottom: 0.5em;
+}

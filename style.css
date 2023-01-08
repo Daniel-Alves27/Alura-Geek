@@ -1,0 +1,17 @@
+@import url(../aluraGeek/css/homeMenu.css);
+@import url(../aluraGeek/css/banner.css);
+@import url(../aluraGeek/css/produtos.css);
+@import url(../aluraGeek/css/footer.css);
+@import url(../aluraGeek/css/login.css);
+@import url(../aluraGeek/css/lista_produtos.css);
+@import url(../aluraGeek/css/adicionar_Produtos.css);
+
+:root {
+    --fonte-principal:'Raleway';
+    --azul-fonte: #2A7AE4;
+    --branco: white;
+    --azul-formulario: #EAF2FD;
+    --cor-placeholder: #A2A2A2;
+    --cinza-background: #E5E5E5;
+    --cinza-login: #C8C8C8;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Adicionar Produtos</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item"><a href="#"><img src="../aluraGeek/img/Logo.svg" alt=""></a></li>
+                <li class="menu__item"><button id="menu__adm">Menu administrador</button></li>
+                <li class="menu__item"><img src="../aluraGeek/img/lupa.svg" alt=""></li>
+            </ul>    
+        </nav>
+    </header>
+
+    <main>
+        <form class="adicionar__container">
+            <h2>Adicionar novo produto</h2>
+            <input type="url" class="adicionar__item" placeholder="URL da imagem">
+            <select id="opcoes" required>
+                <option>--selecionar--</option>
+                <option value="Star Wars">Star Wars</option>
+                <option value="Consoles">Consoles</option>
+                <option value="Diversos">Diverso</option>
+            </select>
+            <input type="text" class="adicionar__item" placeholder="Nome do produto">
+            <input type="number" class="adicionar__item" placeholder="Preço do produto">
+            <input type="text" class="adicionar__item" placeholder="Descrição do produto" style="height: 80px;">
+            <button id="add__botao">Adicionar produto</button>
+        </form>
+    </main>
+
+    <footer>
+        <section class="informacoes__footer">
+            <img src="../aluraGeek/img/Logo2form.svg" alt="logo alura guiki" id="logo__footer">
+            <p class="footer__paragrafo">Quem somos nós</p>
+            <p class="footer__paragrafo">Política de privacidade</p>
+            <p class="footer__paragrafo">Programa fidelidade</p>
+            <p class="footer__paragrafo">Nossas lojas</p>
+            <p class="footer__paragrafo">Quero ser franqueado</p>
+            <p class="footer__paragrafo">Anuncie aqui</p>
+        </section>
+
+        <form class="formulario__footer">
+            <h2>Fale conosco</h2>
+            
+            <input type="text" name="" id="nome" placeholder="Nome" required>
+
+            
+            <input type="text" name="" id="escrevaSuaMensagem" placeholder="Escreva sua mensagem" required>
+            
+            <input type="submit" value="Enviar mensagem" id="enviarMensagem">
+        </form>
+
+        <section class="rodapé">
+            <p>Desenvolvido por Fulana de Tal</p>
+            <p>2021</p>
+        </section>
+    </footer>
+</body>
+</html>

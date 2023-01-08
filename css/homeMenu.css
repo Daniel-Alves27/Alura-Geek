@@ -1,0 +1,45 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu__lista {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item {
+    position: relative;
+    top: 1em;
+}
+
+.menu button {
+    border: 1.5px solid var(--azul-fonte);
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--azul-fonte);
+    padding: 0.5em 3em;
+    margin: 0 3.5em;
+}
+
+/*area de login*/
+.logo {
+    padding-right: 7em;
+}
+
+.lupa {
+    padding-left: 7em;
+}
+
+.login__btn {
+    display: none;
+}
+
+/*botão ADM*/
+
+#menu__adm {
+    padding: 14px 14px;
+    margin: auto 2.5em;
+}

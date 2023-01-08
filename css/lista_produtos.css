@@ -1,0 +1,13 @@
+.icons__edit {
+    position: relative;
+    top: 2em;
+    padding-bottom: 2em;
+}
+
+.icons {
+    display: flex;
+    position: absolute;
+    top: 1.2em;
+    margin-left: 5em;
+    gap: 1.7em;
+}
