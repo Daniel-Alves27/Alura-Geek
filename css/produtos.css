@@ -29,7 +29,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 400px;
+    width: 400px;
     margin: 0 auto;
 }
 
@@ -61,4 +61,28 @@
 
 #mais__produtos{
     display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .produtos__titulo {
+        width: 670px;
+    }
+
+    .produtos__container {
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .produtos__titulo {
+        width: 1050px;
+    }
+
+    .produtos__container {
+        width: 1200px;
+    }
+
+    #mais__produtos{
+        display: flex;
+    }
 }

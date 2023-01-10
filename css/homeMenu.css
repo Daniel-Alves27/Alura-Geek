@@ -43,3 +43,43 @@
     padding: 14px 14px;
     margin: auto 2.5em;
 }
+
+/*____________________________________*/
+
+.lupa {
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .lupa__mobile {
+        display: none;
+    }
+
+    .lupa {
+        display: block;
+        background-color: var(--cinza-pesquisa);
+        width: 270px;
+        height: 40px;
+        border-radius: 20px;
+        padding: 0 0.5em 0 1em;
+        margin-left: 2em;
+        margin-right: 6em;
+    }
+
+    .lupa::placeholder {
+        text-align: left;
+        padding-left: 1em;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--cor-placeholder);
+        background-image: url(../img/icone\ lupa\ cinza.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .lupa {
+        margin-right: 35em;
+    }
+}
