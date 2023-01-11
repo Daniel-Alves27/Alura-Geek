@@ -1,8 +1,6 @@
 .container__login {
-    position: relative;
     display: flex;
     flex-direction: column;
-    top: 2.5em;
     background-color: var(--cinza-background);
     padding-bottom: 6em;
 }
@@ -48,4 +46,20 @@
     font-weight: 400;
     padding-left: 0.7em;
     color: var(--cor-placeholder);
+}
+
+@media screen and (min-width: 1440px){
+    .container__login h2 {
+        font-size: 18px;
+    }
+
+    .login__item {
+        width: 475px;
+        height: 65px;
+    }
+
+    .login__botao {
+        width: 475px;
+        height: 65px;
+    }
 }

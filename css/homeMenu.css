@@ -1,17 +1,17 @@
 .menu {
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 .menu__lista {
     display: flex;
     align-items: center;
+    width: 100vw;
+    justify-content: space-around;
 }
 
 .menu__item {
-    position: relative;
-    top: 1em;
+    padding: 1.5em 0;
 }
 
 .menu button {
@@ -24,19 +24,6 @@
     margin: 0 3.5em;
 }
 
-/*area de login*/
-.logo {
-    padding-right: 7em;
-}
-
-.lupa {
-    padding-left: 7em;
-}
-
-.login__btn {
-    display: none;
-}
-
 /*botão ADM*/
 
 #menu__adm {
@@ -46,16 +33,21 @@
 
 /*____________________________________*/
 
-.lupa {
+.barra__pesquisa {
     display: none;
 }
 
 @media screen and (min-width: 768px){
+    .menu__lista {
+        padding-left: 3em;
+        justify-content: initial;
+    }
+
     .lupa__mobile {
         display: none;
     }
 
-    .lupa {
+    .barra__pesquisa {
         display: block;
         background-color: var(--cinza-pesquisa);
         width: 270px;
@@ -66,7 +58,7 @@
         margin-right: 6em;
     }
 
-    .lupa::placeholder {
+    .barra__pesquisa::placeholder {
         text-align: left;
         padding-left: 1em;
         font-size: 14px;
