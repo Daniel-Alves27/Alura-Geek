@@ -1,17 +1,17 @@
-.adicionar__container h2 {
-    font-family: var(--fonte-principal);
-    font-size: 22px;
-    font-weight: 700;
-    padding: 1em 0 0.4em 1.4em;
-}
-
 .adicionar__container {
     display: flex;
     flex-direction: column;
-    position: relative;
-    top: 2em;
     padding-bottom: 2em;
     background-color: var(--cinza-background);
+}
+
+.adicionar__container h2 {
+    display: flex;
+    font-family: var(--fonte-principal);
+    font-size: 22px;
+    font-weight: 700;
+    width: 330px; 
+    margin: 1em auto;
 }
 
 .adicionar__item {
@@ -54,3 +54,38 @@
     font-weight: 400;
 }
 
+@media screen and (min-width: 768px){
+    .adicionar__container h2 {
+        width: 700px;
+    }
+
+    .adicionar__item {
+        width: 700px;
+    }
+
+    #opcoes {
+        width: 700px;
+    }
+
+    #add__botao {
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .adicionar__container h2 {
+        width: 510px;
+    }
+
+    .adicionar__item {
+        width: 510px;
+    }
+
+    #opcoes {
+        width: 510px;
+    }
+
+    #add__botao {
+        width: 510px;
+    }
+}

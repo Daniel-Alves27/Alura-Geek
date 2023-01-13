@@ -7,11 +7,8 @@
     display: flex;
     align-items: center;
     width: 100vw;
-    justify-content: space-around;
-}
-
-.menu__item {
-    padding: 1.5em 0;
+    justify-content: space-between;
+    padding: 1.5em 1em;
 }
 
 .menu button {
@@ -21,14 +18,12 @@
     font-weight: 600;
     color: var(--azul-fonte);
     padding: 0.5em 3em;
-    margin: 0 3.5em;
 }
 
 /*botão ADM*/
 
 #menu__adm {
     padding: 14px 14px;
-    margin: auto 2.5em;
 }
 
 /*____________________________________*/
@@ -39,8 +34,12 @@
 
 @media screen and (min-width: 768px){
     .menu__lista {
-        padding-left: 3em;
-        justify-content: initial;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu button {
+        margin-right: 1em;
     }
 
     .lupa__mobile {
@@ -54,8 +53,8 @@
         height: 40px;
         border-radius: 20px;
         padding: 0 0.5em 0 1em;
-        margin-left: 2em;
-        margin-right: 6em;
+        margin-right: 30vw;
+        margin-left: 1em;
     }
 
     .barra__pesquisa::placeholder {
@@ -71,6 +70,18 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .menu__lista {
+        padding: 1.5em 6em;
+    }
+
+    .barra__pesquisa {
+        width: 400px;
+    }
+
+    .menu button {
+        padding: 1.1em 3em;
+    }
+
     .lupa {
         margin-right: 35em;
     }
