@@ -7,18 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/controle-de-video-game.png">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
     <title>Adicionar Produtos</title>
 </head>
 <body>
     <header>
         <nav class="menu">
             <ul class="menu__lista">
-                <li class="menu__item"><a href="#"><img src="../aluraGeek/img/Logo.svg" alt=""></a></li>
+                <li class="menu__item"><a href="/index.html"><img src="/img/Logo.svg" alt=""></a></li>
                 <li><input type="search" class="menu__item barra__pesquisa" placeholder="O que deseja encontrar?"></li>
-                <li class="menu__item"><button>Menu administrador</button></li>
-                <li class="menu__item lupa__mobile"><img src="../aluraGeek/img/lupa.svg" alt=""></li>
+                <li class="menu__item"><button class="menu__admin">Menu administrador</button></li>
+                <li class="menu__item lupa__mobile"><img src="/img/lupa.svg" alt=""></li>
             </ul>    
         </nav>
     </header>
@@ -36,13 +37,13 @@
             <input type="text" class="adicionar__item" placeholder="Nome do produto">
             <input type="number" class="adicionar__item" placeholder="Preço do produto">
             <input type="text" class="adicionar__item" placeholder="Descrição do produto" style="height: 80px;">
-            <button id="add__botao">Adicionar produto</button>
+            <button id="add__botao" class="add__botao">Adicionar produto</button>
         </form>
     </main>
 
     <footer class="container">
         <section class="informacoes__footer">
-            <img src="../aluraGeek/img/Logo2form.svg" alt="logo alura guiki" id="logo__footer">
+            <img src="/img/Logo2form.svg" alt="logo alura geek" id="logo__footer" class="logo__footer">
             <p class="footer__paragrafo">Quem somos nós</p>
             <p class="footer__paragrafo">Política de privacidade</p>
             <p class="footer__paragrafo">Programa fidelidade</p>
@@ -54,12 +55,12 @@
         <form class="formulario__footer">
             <h2>Fale conosco</h2>
             
-            <input type="text" name="" id="nome" placeholder="Nome" required>
+            <input type="text" name="" id="nome" class="nome" placeholder="Nome" required>
 
             
-            <input type="text" name="" id="escrevaSuaMensagem" placeholder="Escreva sua mensagem" required>
+            <input type="text" name="" id="escrevaSuaMensagem" class="escrevaSuaMensagem" placeholder="Escreva sua mensagem" required>
             
-            <input type="submit" value="Enviar mensagem" id="enviarMensagem">
+            <input type="submit" value="Enviar mensagem" id="enviarMensagem" class="enviarMensagem">
         </form>
 
         <section class="rodape">

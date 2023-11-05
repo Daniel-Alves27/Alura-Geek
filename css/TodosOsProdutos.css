@@ -2,14 +2,45 @@
 
 .background {
     background-color: var(--cinza-background);
+    padding-top: 1em;
+}
+
+.produtos {
+    display: grid;
+    justify-content: center;
+}
+
+.container__titilo--adiconar {
+    padding: 1.7em 0;
+    width: 100%;
+}
+
+.container__titilo--adiconar h2 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 2em;
+}
+
+.adicionar__produto--item {
+    padding: 12px 10px;
+    background: var(--azul-fonte);
+    color: var(--branco);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.adicionar__produto--item:hover {
+    border: 1px solid var(--azul-fonte);
+    background: var(--branco);
+    color: var(--azul-fonte);
+    transition: 0.5s;
 }
 
 .produtos__container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 400px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding-bottom: 2em;
+    gap: 0.5em;
 }
 
 .produtos__titulo {
@@ -17,12 +48,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 1em 0;
-    width: 380px;
-    margin: 0 auto;
+    width: 100%;
 }
 
-#ver__mais {
-    padding-right: 2em;
+.ver__mais {
+    color: var(--azul-fonte);
 }
 
 .produtos__titulo h2 {
@@ -37,10 +67,6 @@
     color: var(--azul-fonte);
     font-weight: 700;
     background-color:transparent;
-}
-
-.produtos__item {
-    padding: 8px;
 }
 
 .produtos__item h3 {
@@ -70,33 +96,34 @@
 }
 
 @media screen and (min-width: 768px) {
-    .produtos__titulo {
-        width: 780px;
+    .container__titilo--adiconar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
 
-    #ver__mais {
-        padding-right: 1.9em;
+    .container__titilo--adiconar h2 {
+        padding: 0;
     }
 
     .produtos__container {
-        width: 800px;
+        grid-template-columns: repeat(4,1fr);
     }
 }
 
 @media screen and (min-width: 1440px){
-    .produtos__titulo {
-        width: 1180px;
-    }
-
-    #ver__mais {
-        padding-right: 3.3em;
+    .container__titilo--adiconar h2 {
+        font-size: 32px;
     }
 
     .produtos__container {
-        width: 1200px;
+        grid-template-columns: repeat(5,auto);
     }
 
     #mais__produtos{
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 0.5em;
     }
 }

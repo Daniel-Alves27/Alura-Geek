@@ -11,19 +11,33 @@
     padding: 1.5em 1em;
 }
 
-.menu button {
+.menu .botao__login {
     border: 1.5px solid var(--azul-fonte);
     font-family: var(--fonte-principal);
     font-size: 14px;
     font-weight: 600;
     color: var(--azul-fonte);
     padding: 0.5em 3em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.menu .botao__login:hover {
+    color: var(--branco);
+    background: var(--azul-fonte);
+    transition: 0.5s;
 }
 
 /*botão ADM*/
 
 #menu__adm {
     padding: 14px 14px;
+}
+
+.menu__admin {
+    border: 1px solid var(--azul-fonte);
+    padding: 13px 10px;
+    color: var(--azul-fonte);
 }
 
 /*____________________________________*/

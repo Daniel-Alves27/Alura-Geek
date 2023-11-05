@@ -44,7 +44,7 @@
     left: 10px;
 }
 
-#add__botao {
+.add__botao {
     width: 330px;
     height: 50px;
     background-color: var(--azul-fonte);
@@ -52,6 +52,15 @@
     font-family: var(--fonte-principal);
     color: var(--branco);
     font-weight: 400;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.add__botao:hover {
+    border: 1px solid var(--azul-fonte);
+    color: var(--azul-fonte);
+    background: var(--branco);
+    transition: 0.5s;
 }
 
 @media screen and (min-width: 768px){

@@ -1,10 +1,10 @@
-@import url(../aluraGeek/css/homeMenu.css);
-@import url(../aluraGeek/css/banner.css);
-@import url(../aluraGeek/css/TodosOsProdutos.css);
-@import url(../aluraGeek/css/footer.css);
-@import url(../aluraGeek/css/login.css);
-@import url(../aluraGeek/css/iconesEdit.css);
-@import url(../aluraGeek/css/adicionar_Produtos.css);
+@import url(css/homeMenu.css);
+@import url(css/banner.css);
+@import url(css/TodosOsProdutos.css);
+@import url(css/footer.css);
+@import url(css/login.css);
+@import url(css/iconesEdit.css);
+@import url(css/adicionar_Produtos.css);
 
 :root {
     --fonte-principal:'Raleway';

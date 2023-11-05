@@ -30,6 +30,15 @@
     font-family: var(--fonte-principal);
     font-weight: 600;
     margin: 1em auto;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.login__botao:hover {
+    border: 1px solid var(--azul-fonte);
+    color: var(--azul-fonte);
+    background: var(--branco);
+    transition: 0.5s;
 }
 
 #email::placeholder {
